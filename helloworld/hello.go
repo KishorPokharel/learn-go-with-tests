@@ -4,6 +4,7 @@ import "fmt"
 
 const french = "French"
 const spanish = "Spanish"
+
 const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
@@ -14,6 +15,7 @@ func Hello(name, language string) string {
 	}
 	return greetingPrefix(language) + name
 }
+
 func greetingPrefix(language string) string {
 	var prefix string
 	switch language {
